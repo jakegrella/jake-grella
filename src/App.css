@@ -19,7 +19,7 @@ section {
 
 .app {
   margin: 2rem auto 0;
-  max-width: 400px;
+  max-width: 25rem;
 }
 
 .gray {
@@ -29,7 +29,9 @@ section {
 h1 {
   font-size: 1rem;
   margin-bottom: 1rem;
+  color: #f5f5f5;
 }
+
 h2 {
   font-size: 0.875rem;
   font-weight: 800;
@@ -44,6 +46,7 @@ a {
   color: #939393;
   text-decoration: none;
 }
+h1:hover,
 a:hover {
   color: #f0152f;
 }
@@ -54,4 +57,10 @@ ul {
 li {
   margin: 0 0 0.5rem 0;
   list-style: none;
+}
+
+.photoCard img {
+  width: 100%;
+  max-height: 20rem;
+  object-fit: cover;
 }
