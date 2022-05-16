@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
 import { Code, Home, Layout, NotFound, Photo } from "./components";
+import "./main.scss";
 
 function App() {
   return (

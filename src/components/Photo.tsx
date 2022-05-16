@@ -1,4 +1,4 @@
-import { PhotoCard } from "./PhotoCard";
+import { PhotoCard } from "./PhotoCard/PhotoCard";
 import { data } from "../fakeDb";
 
 /* eslint-disable react/jsx-no-comment-textnodes */

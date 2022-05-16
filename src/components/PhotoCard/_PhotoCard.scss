@@ -1,0 +1,12 @@
+.photoCard {
+  display: flex;
+  flex-flow: column nowrap;
+
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 20rem;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+}
