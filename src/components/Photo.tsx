@@ -48,13 +48,8 @@ export const Photo = () => (
     </section>
     <section>
       <h2>Projects</h2>
-      {data.map((e) => (
-        <PhotoCard
-          imgSrc={e.imgSrc}
-          imgAlt={e.imgAlt}
-          title={e.title}
-          date={e.date}
-        />
+      {data.map((i) => (
+        <PhotoCard images={i.images} title={i.title} date={i.date} />
       ))}
     </section>
   </div>

@@ -1,18 +1,9 @@
 import { Link } from "react-router-dom";
+import { PhotoCollection } from "../../../types";
 
-export const PhotoCard = ({
-  imgSrc,
-  imgAlt,
-  title,
-  date,
-}: {
-  imgSrc: string;
-  imgAlt: string;
-  title: string;
-  date: string;
-}) => (
-  <Link to="/" className="photoCard">
-    <img src={imgSrc} alt={imgAlt} />
+export const PhotoCard = ({ images, title, date }: PhotoCollection) => (
+  <Link to=":photoCollection" className="photoCard">
+    <img src={images[0].src} alt={images[0].alt} />
     <p>{title}</p>
     <p>{date}</p>
   </Link>
