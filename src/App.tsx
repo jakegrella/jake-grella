@@ -9,27 +9,29 @@ import {
   PhotoProject,
 } from "./components";
 import "./main.scss";
+import { useStore } from "./store/store";
 
 function App() {
+  const currentPhotoProject = useStore((state) => state.currentPhotoProject);
+
   return (
     <div className="app">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="code" element={<Code />} />
-          <Route path="photo" element={<Photo />}>
-            <Route
-              path="photo/:photoCollection"
-              element={
-                <PhotoProject
-                  images={[]}
-                  title="test title"
-                  date="test date"
-                  description="test description"
-                />
-              }
-            />
-          </Route>
+          <Route path="photo" element={<Photo />} />
+          <Route
+            path="photo/:slug"
+            element={
+              <PhotoProject
+                images={currentPhotoProject.images}
+                title={currentPhotoProject.title}
+                date={currentPhotoProject.date}
+                description={currentPhotoProject.description}
+              />
+            }
+          />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

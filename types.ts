@@ -3,7 +3,7 @@ type Photo = {
   alt: string;
 };
 
-export type PhotoCollection = {
+export type PhotoProject = {
   images: Photo[];
   title: string;
   date: string;

@@ -1,5 +1,5 @@
 import { PhotoCard } from "./PhotoCard/PhotoCard";
-import { data } from "../fakeDb";
+import { data } from "../data";
 
 /* eslint-disable react/jsx-no-comment-textnodes */
 export const Photo = () => (
@@ -49,7 +49,12 @@ export const Photo = () => (
     <section>
       <h2>Projects</h2>
       {data.map((i) => (
-        <PhotoCard images={i.images} title={i.title} date={i.date} />
+        <PhotoCard
+          images={i.images}
+          title={i.title}
+          date={i.date}
+          description={i.description}
+        />
       ))}
     </section>
   </div>
