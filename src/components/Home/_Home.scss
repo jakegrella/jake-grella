@@ -1,0 +1,24 @@
+.home {
+  display: flex;
+  flex-flow: column nowrap;
+  a:first-of-type {
+    background-image: url("./code.jpg");
+  }
+  a:last-of-type {
+    background-image: url("./photo.jpeg");
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25rem;
+    margin-bottom: 1rem;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    &:not(:hover) {
+      color: #fff;
+    }
+  }
+}
