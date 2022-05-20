@@ -4,6 +4,7 @@ type Photo = {
 };
 
 export type PhotoProject = {
+  id: number;
   images: Photo[];
   title: string;
   date: string;

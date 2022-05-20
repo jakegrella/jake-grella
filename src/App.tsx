@@ -25,6 +25,7 @@ function App() {
             path="photo/:slug"
             element={
               <PhotoProject
+                id={currentPhotoProject.id}
                 images={currentPhotoProject.images}
                 title={currentPhotoProject.title}
                 date={currentPhotoProject.date}

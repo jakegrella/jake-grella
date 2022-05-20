@@ -3,6 +3,7 @@ import { PhotoProject } from "../../../types";
 import { useStore } from "../../store/store";
 
 export const PhotoCard = ({
+  id,
   images,
   title,
   date,
@@ -15,7 +16,7 @@ export const PhotoCard = ({
   );
 
   const handleClick = () => {
-    updateCurrentPhotoProject({ images, title, date, description });
+    updateCurrentPhotoProject({ id, images, title, date, description });
   };
 
   return (

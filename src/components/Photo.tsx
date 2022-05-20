@@ -50,6 +50,7 @@ export const Photo = () => (
       <h2>Projects</h2>
       {data.map((i) => (
         <PhotoCard
+          id={i.id}
           images={i.images}
           title={i.title}
           date={i.date}

@@ -7,7 +7,13 @@ interface State {
 }
 
 export const useStore = create<State>((set) => ({
-  currentPhotoProject: { images: [], title: "", date: "", description: "" },
+  currentPhotoProject: {
+    id: 0,
+    images: [],
+    title: "",
+    date: "",
+    description: "",
+  },
   updateCurrentPhotoProject: (i: PhotoProject) =>
     set(() => ({ currentPhotoProject: i })),
 }));
